@@ -1,0 +1,19 @@
+.appContainer {
+    background-color: #324a7a;
+    text-align: "center";
+    justify-content:"end";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 100px;
+}
+.header {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.recordingSvg {
+    height: 25%;
+    padding-bottom: 70px;
+}

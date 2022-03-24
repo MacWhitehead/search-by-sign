@@ -1,0 +1,16 @@
+.mainContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.categories {
+    background-color: #8dc483;
+    list-style: none;
+    color: white;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    border-radius: 10px;
+}

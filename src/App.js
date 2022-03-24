@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import RecordSignPage from './component/recordSign';
+import TopNavContainer from './component/topNav';
+import BottonNavContainer from './component/bottomNav';
+import LibraryCategoriesPage from "./component/libraryCategories"
+import SignOfTheDayPage from './component/signOfTheDay';
+import HelpPage from './component/help';
+import SendUsYourSignPage from './component/sendUsYourSign';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ResultNotFoundPage from './component/resultNotFound';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter className="App">
+      <TopNavContainer />
+      <Routes >
+        <Route exact path="/" element={<RecordSignPage/>}/>
+        <Route exact path="/library" element={<LibraryCategoriesPage/>}/>
+        <Route exact path="/signOfTheDay" element={<SignOfTheDayPage/>}/>
+        <Route exact path="/help" element={<HelpPage/>}/>
+        <Route path="/sendUsYourSign" element={<SendUsYourSignPage />}/>
+        <Route path="/resultNotFound" element={<ResultNotFoundPage />}/>
+      </Routes>
+      <BottonNavContainer />
+    </BrowserRouter>
   );
 }
 
