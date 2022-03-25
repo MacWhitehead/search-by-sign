@@ -2,7 +2,7 @@
     background-color: #324a7a;
     text-align: "center";
     justify-content:"end";
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;

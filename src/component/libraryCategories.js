@@ -1,6 +1,23 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 import "./library.css"
+
+// const categoriesList = {
+//   Category: {
+//     svg: <svg><circle style={{fill: '#0e4f7d'}} cx="7.07" cy="10.99" r="2.34"/></svg>,
+//     items: {
+//       "Sub-Category": {
+//         items: []
+//       }
+//     },
+//         items: [
+//           {title: "Sub-Sub-Category", items: [{title: "Sub-Sub-Sub-Category"}, {title: "Sub-Sub-Sub-Category2"}]}
+//         ]
+//       }
+//   }
+// }
+
 
 const categories = [
   "Food",
@@ -25,7 +42,11 @@ const LibraryCategoriesPage = () => {
           <input placeholder="Search" />
           <ul>
             {categories.map((item, index)=> {
-              return <li className="categories" key={index}>{item}</li>
+              return (
+              <LinkContainer to={`/library/${item}`}>
+                <li className="categories" key={index} props={item}>{item}</li>
+              </LinkContainer>
+              )
             })}
           </ul>
         </Container>

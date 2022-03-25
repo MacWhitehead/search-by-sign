@@ -6,21 +6,23 @@ import "./library.css"
 // Ask if possible to combine and have main categories in this 
 //page as well
 //Ask about rendering SVG per category item 
-// Ask for help with the SVG's and why they won't work in navbar
-//Issue on main recordidng page with height. 
 
 const subCategories = {
   Food: {
-    Fruit: [
-      "Apple", 
-      "Banana", 
-      "Strawberry", 
-      "Cherry", 
-      "Orange", 
-      "Pineapple", 
-      "Grapes", 
-      "Tomato"
-     ], 
+    Fruit: {
+
+      "Apple": {
+        Description: "", 
+        Video: ""
+      }, 
+      "Banana": {}, 
+      "Strawberry": {}, 
+      "Cherry": {}, 
+      "Orange": {}, 
+      "Pineapple": {}, 
+      "Grapes": {}, 
+      "Tomato": {}
+    }, 
      Vegetables: [
        "Onion", 
        "Potato", 
@@ -32,7 +34,7 @@ const subCategories = {
        "Ice Cream", 
        "Cake", 
        "Cookie", 
-       "Pie", ,
+       "Pie", 
        "Chocolate", 
        "Gum"
      ], 
@@ -226,15 +228,16 @@ const subCategories = {
 
 }
 
-const SubcategoriesPage = () => {
+const SubcategoriesPage = (data) => {
       return(
         <Container className="mainContainer">
           <input placeholder="Search" />
-          <ul>
+          <p>Subcategories!</p>
+          {/* <ul>
             {subCategories.entries.map((index, key)=> {
               return <li className="categories" key={index}>{key}</li>
             })}
-          </ul>
+          </ul> */}
         </Container>
       ) 
   }
