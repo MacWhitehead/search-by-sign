@@ -39,7 +39,7 @@ const categories = [
 const LibraryCategoriesPage = () => {
       return(
         <Container className="mainContainer">
-          <input placeholder="Search" />
+          <input className="searchInput" placeholder="Search" />
           <ul>
             {categories.map((item, index)=> {
               return (

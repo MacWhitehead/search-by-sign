@@ -13,6 +13,11 @@ import SubcategoriesPage from './component/subcategories';
 import SignPage from './component/signPage';
 import ItemsListPage from './component/itemsList';
 
+//Ask how to add thicker border on navbar, bootstrap may be overriding. 
+//Ask how to not display nav bar on record sign page
+//Ask about sizing for background with smaller nav bars
+//Ask about library page not showing in app area in between nav bars.
+
 const data = {
   Food: [
     "Fruit",

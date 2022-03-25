@@ -7,6 +7,14 @@ import "./library.css"
 //page as well
 //Ask about rendering SVG per category item 
 
+const foodSubCats = [
+  "Fruit",
+  "Vegetables",
+  "Desserts",
+  "Dairy",
+  "Other"
+]
+
 const subCategories = {
   Food: {
     Fruit: {
@@ -231,13 +239,17 @@ const subCategories = {
 const SubcategoriesPage = (data) => {
       return(
         <Container className="mainContainer">
-          <input placeholder="Search" />
-          <p>Subcategories!</p>
+          <input placeholder="Search" className="searchInput" />
           {/* <ul>
             {subCategories.entries.map((index, key)=> {
               return <li className="categories" key={index}>{key}</li>
             })}
           </ul> */}
+          <ul>
+            {foodSubCats.entries.map((index)=> {
+              return <li className="categories" key={index}>{index}</li>
+            })}
+          </ul>
         </Container>
       ) 
   }
