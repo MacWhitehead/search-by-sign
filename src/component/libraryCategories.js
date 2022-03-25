@@ -20,20 +20,20 @@ import "./library.css"
 
 
 const categories = [
-  "Food",
-  "Colors",
-  "School Subjects", 
-  "Animals", 
-  "Insects",
-  "Common Slang",
-  "Interrogative Words",
-  "Time Markers", 
-  "Personal Pronouns & Possesives", 
-  "Religious/Ecllesiastical", 
-  "Holidays",
-  "Hobbies", 
-  "Families",
-  "Greetings", 
+  {title: "Food", svg: <svg></svg>, hasSubcategories: true},
+  {title: "Colors", svg: <svg></svg>, hasSubcategories: false},
+  {title: "School Subjects", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Animals", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Insects", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Common Slang", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Interrogative Words", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Time Markers", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Personal Pronouns & Possesives", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Religious/Ecllesiastical", svg: <svg></svg>, hasSubcategories: true},
+  {title: "Holidays", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Hobbies", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Families", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Greetings", svg: <svg></svg>, hasSubcategories: false},
 ]
 
 const LibraryCategoriesPage = () => {
@@ -43,8 +43,8 @@ const LibraryCategoriesPage = () => {
           <ul>
             {categories.map((item, index)=> {
               return (
-              <LinkContainer to={`/library/${item}`}>
-                <li className="categories" key={index} props={item}>{item}</li>
+              <LinkContainer key={index} to={`/library/${item?.title ? item.title : item}${item.hasSubcategories ? '': '/items'}`}>
+                <li className="categories">{item?.title ? item.title: item}</li>
               </LinkContainer>
               )
             })}

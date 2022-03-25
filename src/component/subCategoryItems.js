@@ -5,9 +5,6 @@ import { useParams } from "react-router-dom";
 import { navData } from "../navData";
 import "./library.css"
 
-// Ask how to render the key as a header and items as LI
-// Ask if possible to combine and have main categories in this 
-//page as well
 //Ask about rendering SVG per category item 
 
 const foodSubCats = [
@@ -239,19 +236,24 @@ const subCategories = {
 
 }
 
-const SubcategoriesPage = () => {
+const SubCategoryItems = () => {
   const params = useParams();
-  const { category } = params;
-  const items = navData[category];
+  const { category, subcategory } = params;
+  const items = navData[subcategory];
       return(
         <Container className="mainContainer">
           <input placeholder="Search" className="searchInput" />
-          <h2>{category}</h2>
+          {/* <ul>
+            {subCategories.entries.map((index, key)=> {
+              return <li className="categories" key={index}>{key}</li>
+            })}
+          </ul> */}
+          <h2>{category} - {subcategory}</h2>
           <ul>
-            {items.map((item)=> {
-              return <LinkContainer key={item} to={`/library/${category}/${item}/items`}>
+            {items?.map((item)=> {
+              return <LinkContainer key={item} to={`/sign/${item}`}>
 
-              <li className="sub-categories" >{item}</li>
+              <li className="items" >{item}</li>
               </LinkContainer>
             })}
           </ul>
@@ -259,4 +261,4 @@ const SubcategoriesPage = () => {
       ) 
   }
 
-export default SubcategoriesPage
+export default SubCategoryItems;

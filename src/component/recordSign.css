@@ -2,11 +2,13 @@
     background-color: #324a7a;
     text-align: "center";
     justify-content:"end";
-    height: 100%;
+    height: 120%;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-bottom: 100px;
+    padding-bottom: 20%;
+    margin-bottom: -15%;
+    margin-top: -15%;
 }
 .header {
     text-align: center;
