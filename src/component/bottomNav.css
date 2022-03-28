@@ -1,18 +1,20 @@
-.mainContainer {
+.bottomNavContainer {
     background-color: #edf4fa;
     padding: 5px 0px;
     width: 95%;
 }
-.nav {
+.bottomBorderNav {
+    border-top: rgba(165,215,224) solid 10px;
+}
+.bottomNav {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.coloredBorder {
-    border-top: #83b7cc;
-    border-style: solid 20px;
-}
 .links {
     color: #324a7a;
+}
+.navbar {
+    padding: 0;
 }

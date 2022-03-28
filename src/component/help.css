@@ -1,0 +1,78 @@
+.helpContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 120%;
+    margin-bottom: -60%;
+    margin-top: -15%;
+    background-color: #eaf5fb;
+}
+.helpHeader {
+    color: #0e4e7c;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.helpFormHeader {
+    background-color: #0e4e7c;
+    color: white;
+    padding: 10px 0px;
+    font-size: 1.1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0;
+    width: 98%;
+}
+.helpSendMessageContainer {
+    background-color: white;
+}
+input::placeholder {
+    color: #0e4e7c;
+}
+.helpEmail {
+    background-color: #eaf5fb;
+    border-radius: 50px;
+    border: none;
+    width: 96%;
+}
+.helpMessage {
+    background-color: white;
+    width: 98%;
+    border: none;
+}
+.helpSubmitMessage {
+    background-color: #72becb;
+    color: white;
+    padding: 5px 0px;
+    font-size: 1.3em;
+    border-radius: 40px;
+    width: 43%;
+    border: none;
+    font-weight: bolder;
+}
+.helpNoResults {
+    color: #304c62;
+    font-size: 1.15;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.helpSendSign {
+    background-color: #70c280;
+    color: white;
+    padding: 10px 0px;
+    font-size: 1.4em;
+    border-radius: 40px;
+    width: 80%;
+    border: none;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.helpAboutUs {
+    color: #304c62;
+    border: none;
+    background-color: #eaf5fb;
+    font-size: 1.4em;
+    font-weight: bolder;
+}

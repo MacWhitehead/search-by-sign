@@ -1,0 +1,74 @@
+.sendSignContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: #eaf5fb;
+    color: #0e4e7c;
+}
+.sendSignHeader {
+    font-weight: bolder;
+}
+.submitSignEmailContainer {
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #0e4e7c;
+    height: 30px;
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+.sendSignEmail {
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+}
+.sendSignInfo {
+    background-color: #5ab9cd;
+    padding: 10px 0px;
+    height: 90px;
+    width: 95%;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+.sendSignInfoText {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.submitSignRecord {
+    padding-top: 10px;
+    padding-bottom: 85px;
+    background-color: #5ab9cd;
+    height: 180px;
+    width: 80%;
+}
+.submitSignSubmitContainer {
+    background-color: white;
+    height: 70px;
+    width: 65%;
+    color: #0e4e7c;
+    border-radius: 10px;
+    padding: 0;
+    margin: auto;
+}
+.submitSignHeader {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.submitSignButton {
+    color: #0e4e7c;
+    border: none;
+    background-color: white;
+}
+.sendSignRecord {
+    height: 65%;
+    margin-top: 20px;
+}

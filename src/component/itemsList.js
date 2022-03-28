@@ -13,7 +13,7 @@ const ItemsListPage = (data) => {
         <input placeholder="Search" />
         <h2>{category}</h2>
         <ul>
-          {items.entries.map((item)=> {
+          {items.map((item)=> {
             return <LinkContainer key={item} to={`/library/${category}`}>
               <li className="category-list" >{item}</li>
               </LinkContainer>

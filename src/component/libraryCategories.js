@@ -1,45 +1,40 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, FormControl, InputGroup } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import "./library.css"
-
-// const categoriesList = {
-//   Category: {
-//     svg: <svg><circle style={{fill: '#0e4f7d'}} cx="7.07" cy="10.99" r="2.34"/></svg>,
-//     items: {
-//       "Sub-Category": {
-//         items: []
-//       }
-//     },
-//         items: [
-//           {title: "Sub-Sub-Category", items: [{title: "Sub-Sub-Sub-Category"}, {title: "Sub-Sub-Sub-Category2"}]}
-//         ]
-//       }
-//   }
-// }
-
+import {BsSearch} from "react-icons/bs";
 
 const categories = [
-  {title: "Food", svg: <svg></svg>, hasSubcategories: true},
-  {title: "Colors", svg: <svg></svg>, hasSubcategories: false},
-  {title: "School Subjects", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Animals", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Insects", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Common Slang", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Interrogative Words", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Time Markers", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Personal Pronouns & Possesives", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Religious/Ecllesiastical", svg: <svg></svg>, hasSubcategories: true},
-  {title: "Holidays", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Hobbies", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Families", svg: <svg></svg>, hasSubcategories: false},
-  {title: "Greetings", svg: <svg></svg>, hasSubcategories: false},
+  {title: "Food", hasSubcategories: true},
+  {title: "Colors", hasSubcategories: false},
+  {title: "School Subjects", hasSubcategories: false},
+  {title: "Animals", hasSubcategories: false},
+  {title: "Insects", hasSubcategories: false},
+  {title: "Common Slang", hasSubcategories: false},
+  {title: "Interrogative Words", hasSubcategories: false},
+  {title: "Time Markers", hasSubcategories: false},
+  {title: "Personal Pronouns & Possesives", hasSubcategories: false},
+  {title: "Religious/Ecllesiastical", hasSubcategories: true},
+  {title: "Holidays", hasSubcategories: false},
+  {title: "Hobbies", hasSubcategories: false},
+  {title: "Families", hasSubcategories: false},
+  {title: "Greetings", hasSubcategories: false},
 ]
 
 const LibraryCategoriesPage = () => {
       return(
-        <Container className="mainContainer">
-          <input className="searchInput" placeholder="Search" />
+        <Container className="libraryContainer">
+          <InputGroup className="mb-3 librarySearchInputContainer">
+                <span className="librarySearchIcon">
+                  <BsSearch />
+                </span>
+              <FormControl
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon1"
+                className="librarySearchInput"
+              />
+          </InputGroup>
           <ul>
             {categories.map((item, index)=> {
               return (

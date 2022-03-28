@@ -8,6 +8,10 @@ export const navData = {
       ], 
       Fruit: [
         "Apple",
+        // "Apple": {
+        //   Description: "", 
+        //   Video: ""
+        // },
          "Banana",
          "Strawberry", 
          "Cherry", 
@@ -218,4 +222,4 @@ export const navData = {
           "Good morning/Afternoon/Evening", 
         ]
 
-        };
+};

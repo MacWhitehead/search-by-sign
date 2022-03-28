@@ -2,12 +2,17 @@ import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import {LinkContainer} from 'react-router-bootstrap'
 import "./bottomNav.css"
+import {AiOutlineLeft} from "react-icons/ai";
+
 
 const TopNavContainer = () => {
       return(
-        <Navbar variant="dark" fixed="top">
-        <Container className="mainContainer border-bottom border-info">
-        <Nav className="me-auto nav">
+        <Navbar variant="dark" fixed="top" bg="light">
+        <Container className="topNavContainer topBorderNav">
+          <LinkContainer to="/">
+            <AiOutlineLeft/>
+          </LinkContainer>
+        <Nav className="me-auto topNav">
           <LinkContainer to="/help">
             <Nav.Link>
               <svg id="Layer_1" data-name="Layer 1" width="250" height="40"
@@ -33,7 +38,8 @@ const TopNavContainer = () => {
               </svg>
             </Nav.Link>
           </LinkContainer>
-          <Nav.Link href="#features">
+          <LinkContainer to="/settings">
+          <Nav.Link >
             <svg id="Layer_1" data-name="Layer 1" width="40" height="40"
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 16.28 16.28">
@@ -41,6 +47,7 @@ const TopNavContainer = () => {
               <path style={{fill: "#0e4f7d"}} d="M13.56,10A3.56,3.56,0,1,1,10,6.44,3.56,3.56,0,0,1,13.56,10Zm-1.08,0A2.48,2.48,0,1,0,10,12.48,2.47,2.47,0,0,0,12.48,10Z" transform="translate(-1.86 -1.86)"/>
             </svg>
           </Nav.Link>
+          </LinkContainer>
         </Nav>
         </Container>
       </Navbar>

@@ -1,0 +1,39 @@
+.resultFoundContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.foundResultSearchIcon {
+    width: 40px;
+    margin: auto;
+}
+.foundResultSearchInputContainer {
+    border-bottom: 4px solid grey;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.foundResultSearchInput {
+    border: none;
+}
+.foundResultsHeader {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #0e4e7c;
+    margin-bottom: 40px;
+}
+.foundResultsContainer {
+    display: flex;
+    flex-direction: row;
+    height: 225px;
+}
+.foundResultsVideo {
+    margin-right: 20px;
+}
+.resultFoundItemName {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #0e4e7c;
+}

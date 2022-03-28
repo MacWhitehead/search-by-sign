@@ -8,17 +8,17 @@ import SignOfTheDayPage from './component/signOfTheDay';
 import HelpPage from './component/help';
 import SendUsYourSignPage from './component/sendUsYourSign';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ResultNotFoundPage from './component/resultNotFound';
 import SubcategoriesPage from './component/subcategories';
 import SubcategoryItems from './component/subCategoryItems';
 import SignPage from './component/signPage';
 import ItemsListPage from './component/itemsList';
+import AboutUsPage from './component/aboutUs';
+import ConfirmSubmitPage from './component/confirmSubmit';
+import ResultFoundPage from './component/resultFound';
 
 //Ask how to add thicker border on navbar, bootstrap may be overriding. 
-//Ask about sizing for background with smaller nav bars
-//Ask about library page not showing in app area in between nav bars.
+//Issue with categories that go straight to items instead of subcat
 
-//Talk to beth about keeping nav on record sign page.
 //Hide contents on record  on record sign page
 // https://developers.google.com/web/fundamentals/media/capturing-images#access_the_camera_interactively
 
@@ -36,7 +36,9 @@ function App() {
         <Route exact path="/signOfTheDay" element={<SignOfTheDayPage/>}/>
         <Route exact path="/help" element={<HelpPage/>}/>
         <Route path="/sendUsYourSign" element={<SendUsYourSignPage />}/>
-        <Route path="/resultNotFound" element={<ResultNotFoundPage />}/>
+        <Route path="/resultFound" element={<ResultFoundPage />}/>
+        <Route path="/aboutUs" element={<AboutUsPage />}/>
+        <Route path="/confirmSubmit" element={<ConfirmSubmitPage />}/>
       </Routes>
       <BottonNavContainer />
     </BrowserRouter>

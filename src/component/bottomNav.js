@@ -6,9 +6,9 @@ import "./bottomNav.css"
 const BottonNavContainer = () => {
       return(
         <Navbar variant="dark" fixed="bottom">
-        <Container className="mainContainer border-top border-info" >
+        <Container className="bottomNavContainer bottomBorderNav" >
           <div className="coloredBorder"></div>
-          <Nav className="me-auto nav">
+          <Nav className="me-auto bottomNav">
             <LinkContainer to="/">
             <Nav.Link>
               <svg id="Layer_1" width="40" height="40"
@@ -31,7 +31,7 @@ const BottonNavContainer = () => {
               </svg>
             </Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/resultNotFound">
+            <LinkContainer to="/signOfTheDay">
             <Nav.Link><svg id="Layer_1" data-name="Layer 1" width="40" height="40"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.3 18.19">
               <rect style={{fill: "#0e4f7d"}} x="1.16" y="5.43" width="14.25" height="1.78"/>

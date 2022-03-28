@@ -1,0 +1,12 @@
+.confirmSubmitContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    padding-top: 30%;
+    margin-bottom: -60%;
+    margin-top: -15%;
+    color: #324a7a;
+    font-weight: bold;
+}
