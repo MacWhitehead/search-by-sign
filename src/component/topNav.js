@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import {LinkContainer} from 'react-router-bootstrap'
-import "./bottomNav.css"
+import "./topNav.css"
 import {AiOutlineLeft} from "react-icons/ai";
 
 

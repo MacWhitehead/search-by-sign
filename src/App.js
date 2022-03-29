@@ -15,6 +15,7 @@ import ItemsListPage from './component/itemsList';
 import AboutUsPage from './component/aboutUs';
 import ConfirmSubmitPage from './component/confirmSubmit';
 import ResultFoundPage from './component/resultFound';
+import SettingsPage from './component/settings';
 
 //Ask how to add thicker border on navbar, bootstrap may be overriding. 
 //Issue with categories that go straight to items instead of subcat
@@ -39,6 +40,7 @@ function App() {
         <Route path="/resultFound" element={<ResultFoundPage />}/>
         <Route path="/aboutUs" element={<AboutUsPage />}/>
         <Route path="/confirmSubmit" element={<ConfirmSubmitPage />}/>
+        <Route path="/settings" element={<SettingsPage />}/>
       </Routes>
       <BottonNavContainer />
     </BrowserRouter>

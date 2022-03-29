@@ -7,7 +7,6 @@ const BottonNavContainer = () => {
       return(
         <Navbar variant="dark" fixed="bottom">
         <Container className="bottomNavContainer bottomBorderNav" >
-          <div className="coloredBorder"></div>
           <Nav className="me-auto bottomNav">
             <LinkContainer to="/">
             <Nav.Link>
