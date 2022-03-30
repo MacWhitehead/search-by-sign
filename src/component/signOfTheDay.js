@@ -1,21 +1,111 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./signOfTheDay.css"
+import "./signOfTheDay.css";
 
 const SignOfTheDayPage = () => {
-      return(
-        <Container className="SODContainer">
-          <h6 className="SODBanner">Sign of the Day!</h6>
-          <video className="SODVideo" controls={true} width="100%" height="100%"
-            src="https://www.youtube.com/watch?v=i74fcOMeN8E">
-          </video>
-          {/* Would need to add dynamic programming for the sign of the day here, 
-          hard coded for now */}
-          <p className="SODItemName">Apple</p>
-          <p className="SODItemDescription">The fruit of a tree of the rose family, typically
-          has thin red or green skin and crisp flesh</p>
-        </Container>
-      ) 
-  }
+  return (
+    <Container className="SODContainer">
+      <div className="SODBannerContainer">
+        <svg
+          className="leftWingBanner"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 26.07 26.72"
+        >
+          <polygon
+            style={{ fill: "#56c2b0" }}
+            points="26.07 0 1.37 0 13.72 14.39 0 26.72 26.07 26.72 26.07 0"
+          />
+        </svg>
+        <h6 className="SODBanner">Sign of the Day!</h6>
+        <svg
+          className="rightWingBanner"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 26.07 26.72"
+        >
+          <polygon
+            style={{ fill: "#56c2b0" }}
+            points="26.07 0 1.37 0 13.72 14.39 0 26.72 26.07 26.72 26.07 0"
+          />
+        </svg>
+      </div>
+      <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/i74fcOMeN8E"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="SODVideo"
+      ></iframe>
+      <div className="SODVideoButtons">
+        {/* Snail SVG */}
+        <svg
+          height="40px"
+          width="40px"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 17.16 13.87"
+        >
+          <path
+            style={{ fill: "#56c2b0" }}
+            d="M1.42,14.32a1.78,1.78,0,0,0,2-.38,1.19,1.19,0,0,1,.16-.08.74.74,0,0,1,1,.09,4.19,4.19,0,0,0,5-.15.86.86,0,0,1,.46-.13c.88,0,1.77,0,2.64-.06a2.25,2.25,0,0,0,1.88-1.38,8.4,8.4,0,0,0,1-4.66,2.18,2.18,0,0,1,.42-1.79c.05,0,0-.19,0-.27-.14-.35-.29-.7-.46-1a.69.69,0,0,0-.25-.26.43.43,0,0,1-.17-.57.41.41,0,0,1,.55-.23.44.44,0,0,1,.29.52.48.48,0,0,0,0,.29c.17.42.37.83.55,1.23h.85c.1-.48.19-1,.29-1.49a.2.2,0,0,0,0-.15c-.23-.35-.06-.56.23-.73H18c.36.3.38.46.1.82a.43.43,0,0,0-.09.21c-.07.29-.11.59-.19.87s-.19.76.29,1a.55.55,0,0,1,.19.23c.26.42.39.9,0,1.25a.55.55,0,0,0-.14.37c0,1,0,2.05.09,3.06a4.3,4.3,0,0,1-1.74,4,10.62,10.62,0,0,1-5.66,2,30.38,30.38,0,0,1-3.82.07,10.93,10.93,0,0,1-3.81-.81,2.83,2.83,0,0,1-1.82-1.59Zm15.64-8h-.17c-.09.15-.27.3-.26.43a.46.46,0,0,0,.35.31.46.46,0,0,0,.34-.31C17.33,6.61,17.15,6.47,17.06,6.32Z"
+            transform="translate(-1.42 -3.09)"
+          />
+          <path
+            style={{ fill: "#56c2b0" }}
+            d="M10.38,12.66a4.52,4.52,0,0,0,0-2.42A2.55,2.55,0,0,0,6.39,9a2.11,2.11,0,0,0-.83,2.1c0,.21.13.39.37.36s.2-.22.2-.4a1.62,1.62,0,0,1,1-1.69,2,2,0,0,1,2.2.74,2.29,2.29,0,0,1-.69,3.36,3.15,3.15,0,0,1-4.86-2.76A4.33,4.33,0,0,1,8.39,6.23a5.6,5.6,0,0,1,5.17,4.51c0,.16,0,.32.08.48.11.75.22.68-.61,1.06A5.16,5.16,0,0,1,10.38,12.66Z"
+            transform="translate(-1.42 -3.09)"
+          />
+        </svg>
+        {/* Replay SVG */}
+        <svg
+          height="40px"
+          width="40px"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 17.33 17.64"
+        >
+          <path
+            style={{ fill: "#56c2b0" }}
+            d="M7,7.7c-1.73,0-3.46,0-5.19,0-.35,0-.47-.12-.47-.47,0-1.73,0-3.46,0-5.19a2,2,0,0,1,.13-.41,1.57,1.57,0,0,1,.38.22c.61.59,1.21,1.2,1.84,1.84L4,3.4A8.51,8.51,0,0,1,13,1.8a8.41,8.41,0,0,1,5.62,7A8.81,8.81,0,0,1,1.43,12.62c-.11-.37-.05-.55.34-.62s.89-.2,1.32-.33.5,0,.61.34a6.47,6.47,0,1,0,7.22-8.37A6.35,6.35,0,0,0,5.61,5.12a1.8,1.8,0,0,1-.32.19C6,6,6.59,6.6,7.18,7.2"
+            transform="translate(-1.33 -1.18)"
+          />
+        </svg>
+        {/* Share SVG */}
+        <svg
+          height="40px"
+          width="40px"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16.65 16.69"
+        >
+          <path
+            style={{ fill: "#56c2b0" }}
+            d="M18.83,6.63c0,.13-.1.27-.16.4a.45.45,0,0,1-.11.13l-3.35,3.35c-.23.23-.45.46-.69.68a.67.67,0,0,1-.37.22.29.29,0,0,1-.32-.12.87.87,0,0,1-.12-.52V8.39c-.2,0-.4,0-.6,0-.47,0-.94,0-1.4.12a6.1,6.1,0,0,0-2.51.92,4.12,4.12,0,0,0-1.86,2.71,3.37,3.37,0,0,0,.06,1.67l.1.27a.44.44,0,0,1,0,.16c0,.27-.24.3-.42.19a.78.78,0,0,1-.24-.27A6.51,6.51,0,0,1,6,11.6,6.2,6.2,0,0,1,6.1,9.54,5.81,5.81,0,0,1,7.43,6.93a6.48,6.48,0,0,1,2.46-1.7,8.51,8.51,0,0,1,2.44-.57c.43,0,.85,0,1.28,0h.1V4.39c0-.47,0-.94,0-1.41,0-.28,0-.56,0-.84a.72.72,0,0,1,.07-.28.29.29,0,0,1,.42-.17,1.21,1.21,0,0,1,.35.24c.48.47.95,1,1.43,1.43L18.45,5.8a1.08,1.08,0,0,1,.35.53l0,.1Z"
+            transform="translate(-2.18 -1.66)"
+          />
+          <path
+            style={{ fill: "#56c2b0" }}
+            d="M5,18.34a3.5,3.5,0,0,1-.45-.07,2.93,2.93,0,0,1-2.25-2.14,2.71,2.71,0,0,1-.1-.75c0-2.84,0-5.69,0-8.53a2.82,2.82,0,0,1,1-2.16A3,3,0,0,1,4.72,4a3.55,3.55,0,0,1,.46,0H6.79a.6.6,0,1,1,0,1.19H5.15a1.81,1.81,0,0,0-1.73,1.4,3.27,3.27,0,0,0,0,.54c0,1.32,0,2.64,0,4v4.17a1.82,1.82,0,0,0,.21,1,1.77,1.77,0,0,0,1.62,1h8.31A1.76,1.76,0,0,0,15,16.49a1.67,1.67,0,0,0,.42-1.13V12.58a.6.6,0,0,1,.86-.54.57.57,0,0,1,.33.53c0,1,0,2,0,3a2.69,2.69,0,0,1-.78,1.79,2.84,2.84,0,0,1-1.79.94l-.24,0Z"
+            transform="translate(-2.18 -1.66)"
+          />
+        </svg>
+      </div>
+      <p className="SODItemName">Apple</p>
+      <p className="SODItemDescription">
+        The fruit of a tree of the rose family, typically has thin red or green
+        skin and crisp flesh
+      </p>
+    </Container>
+  );
+};
 
-export default SignOfTheDayPage
+export default SignOfTheDayPage;

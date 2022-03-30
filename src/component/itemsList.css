@@ -1,4 +1,4 @@
-.mainContainer {
+.itemsListContainer {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   margin-bottom: -20%;
   padding-bottom: 25%;
 }
-.categoryHeader {
+.itemsListHeader {
   background-color: #8dc483;
   color: white;
   font-size: 32px;
@@ -23,7 +23,7 @@ ul {
   width: 100%;
   padding: 0;
 }
-.subcategoriesLI {
+.itemsLI {
   background-color: #5ab9cd;
   list-style: none;
   color: white;
@@ -33,16 +33,16 @@ ul {
   margin-bottom: 8px;
   padding: 10px 0px 10px 35px;
 }
-.subCatSearchIcon {
+.itemsListSearchIcon {
   width: 40px;
   margin: auto;
 }
-.subCatSearchInputContainer {
+.itemsListSearchContainer {
   border-width: 0;
   border-bottom: 4px solid grey;
   margin: 40px 0px;
   width: 95%;
 }
-.subCatSearchInput {
+.itemsListSearchInput {
   border: none;
 }

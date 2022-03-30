@@ -1,0 +1,34 @@
+.aboutUsMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 120%;
+  margin-bottom: -60%;
+  margin-top: -15%;
+  background-color: #eaf5fb;
+  padding-top: 26%;
+  padding-bottom: 18%;
+}
+.aboutUsHeader {
+  color: #324a7a;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.carouselContainer {
+  height: 100%;
+}
+
+.image-wrapper {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.circle-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}

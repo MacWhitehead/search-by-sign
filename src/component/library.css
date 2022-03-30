@@ -1,30 +1,31 @@
 .libraryContainer {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    padding-bottom: 75px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding-bottom: 75px;
 }
 .categories {
-    background-color: #8dc483;
-    list-style: none;
-    color: white;
-    margin-bottom: 10px;
-    font-size: 1.7rem;
-    border-radius: 10px;
-    font-weight: bold;
-    padding: 10px 0px 10px 35px;
+  background-color: #8dc483;
+  list-style: none;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px 0px 10px 35px;
 }
 .librarySearchIcon {
-    width: 40px;
-    margin: auto;
+  width: 40px;
+  margin: auto;
 }
 .librarySearchInputContainer {
-    border-bottom: 4px solid grey;
-    margin: 40px 0px;
-    width: 95%;
+  border-width: 0;
+  border-bottom: 4px solid grey;
+  margin: 40px 0px;
+  width: 95%;
 }
 .librarySearchInput {
-    border: none;
+  border: none;
 }
