@@ -24,12 +24,10 @@ const AboutUsPage = () => {
           <p>Elisabeth Sheber</p>
           {/* <p>Deaf Studies: Interpreting BA</p> */}
           <p>
-            In my time as a Deaf Studies Interpreting student at UVU, one of the
-            biggest struggles is when I saw a sign used in a place I couldn't
-            have it clarified, and I had no idea what it meant or how to then
-            reproduce and use it myself. I wanted to create a dictionary app
-            that allowed the user to search for a sign by submitting a video of
-            it.
+            As a Deaf Studies Interpreting student at UVU, one of the biggest
+            struggles I've had is when I saw an unknown sign. There was no way
+            to clarify the meaning or reproduce the sign. I wanted to create a
+            dictionary app to search for a sign by submitting a video of it.
           </p>
         </Carousel.Item>
         <Carousel.Item>
@@ -62,11 +60,10 @@ const AboutUsPage = () => {
           <h3>App Designer</h3>
           <p>Lyndsie Leavitt</p>
           <p>
-            Lyndsie is working towards her Bachelors of Fine Arts Degree as a
-            Graphic Design student at Utah Valley University. She hopes to
-            eventually work in the publishing industry or doing advertising for
-            entertainment industries. When she isn't working on art, she enjoys
-            hiking, eating good food, and experimenting with new hobbies
+            Lyndsie is working towards her BA of Fine Arts in Graphic Design at
+            UVU. She hopes to eventually work in publishing or advertising. When
+            she isn't working on art, she enjoys hiking, eating good food, and
+            experimenting with new hobbies
           </p>
         </Carousel.Item>
         <Carousel.Item>
